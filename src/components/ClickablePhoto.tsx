@@ -9,53 +9,42 @@ type PhotoProps = {
 }
 const useStyles = makeStyles({
     imageContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center',
-        //display: 'flex',
-        maxWidth: '400px',
-        //width: '50%',
-        position: 'relative',
-    },
-    image: {
-        height: "auto",
-        width: "400px",
-        padding: 15,
-        paddingTop: 0,
+        height: "600px",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        margin: 20,
+        maxWidth: "30vw",
         "&:hover": { 
             opacity: 0.8,
         },
     },
     textOverlay: {
-        zIndex: 10,
         position: 'relative',
-        top: '300px',
+        top: '250px',
         paddingTop: 20,
         paddingBottom: 20,
-        left: '15px',
         fontFamily: 'tahoma',
         fontSize: 30,
-        //color: '#4D5656',
         backgroundColor: '#D6E5D6',
         opacity: .5,
-        width: '400px',
     },
 
     //TODO: conditional styling for mobile??
     // @media screen and (max-width: 40.5em) {
-
     // }
 })
+
 
 const clickFunction = () => {
 console.log("hi");
 }
 export const ClickablePhoto = (props: PhotoProps) : JSX.Element => {
+    const image = { uri: props.imageSrc };
     const classes = useStyles();
-    return (<span className="imageContainer">
-        {((props.text) !== null) ? 
-        <div className={classes.textOverlay}>{props.text}</div>
-        : null}
-        <img src={props.imageSrc} className={classes.image} alt={props.alt} onClick={clickFunction}/>
-</span>)
+    return (
+        <div className={classes.imageContainer} style={{backgroundImage: `url(${props.imageSrc})`}}>
+            {((props.text) !== undefined) ?
+            <div className={classes.textOverlay}>{props.text}</div> : null}
+        </div>
+    )
 }

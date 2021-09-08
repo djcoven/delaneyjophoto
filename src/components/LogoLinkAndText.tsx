@@ -15,6 +15,7 @@ const useStyles = makeStyles({
         display: "inline-block"
     },
     image: {
+        zIndex: -1,
         height: "auto",
         width: "18px",
         paddingRight: "5px",
