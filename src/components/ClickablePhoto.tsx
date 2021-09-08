@@ -24,10 +24,7 @@ const useStyles = makeStyles({
         paddingTop: 0,
         "&:hover": { 
             opacity: 0.8,
-            "& > div": {
-                color: "red"
-            }
-        }
+        },
     },
     textOverlay: {
         zIndex: 10,
@@ -39,8 +36,8 @@ const useStyles = makeStyles({
         fontFamily: 'tahoma',
         fontSize: 30,
         //color: '#4D5656',
-        backgroundColor: '#B2BABB',
-        opacity: .7,
+        backgroundColor: '#D6E5D6',
+        opacity: .5,
         width: '400px',
     },
 
