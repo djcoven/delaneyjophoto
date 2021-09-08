@@ -1,11 +1,8 @@
 import './App.css'
-import img from './images/maternity/IMG_7557.jpg'
-import img2 from './images/nature/IMG_7064.jpg'
 import github from './images/logos/github.png'
 import instagram from './images/logos/instagram.png'
-import { ClickablePhoto } from './components/ClickablePhoto'
-import Grid from '@material-ui/core/Grid'
 import {LogoLinkAndText} from './components/LogoLinkAndText'
+import {HomePage} from './pages/HomePage.tsx'
 
 function App() {
   return (
@@ -16,24 +13,15 @@ function App() {
         </div>
         <div> Portrait and Nature Photography </div>
       </header>
-      <Grid container spacing={0}>
-        <Grid item xs></Grid>
-        <Grid item xs>
-            <ClickablePhoto linkTo="somewhere" alt="propAlt" imageSrc={img} text="Portraiture"/>
-        </Grid>
-        <Grid item xs>
-            <ClickablePhoto linkTo="somewhere" alt="propAlt" imageSrc={img2} text="Nature and Wildlife Shop"/>
-        </Grid>
-        <Grid item xs></Grid>
-
-      </Grid>
+      <HomePage/>
       <footer className="app-footer2">
-        <div>Create more than you consume</div>
+        <div >Create more than you consume</div>
+        <br/>
         <LogoLinkAndText image={instagram} text="@dj.coveno" link="instagram link"></LogoLinkAndText>
         <br/>
         <LogoLinkAndText image={github} text="@djcoven" link="github link"></LogoLinkAndText>
       </footer>
-      <footer className="app-footer">© 2021 by Delaney Coveno. The code for this site is on my GitHub: @djcoven. <br></br> Please contact me at djcoveno@gmail.com to create some photos together :)</footer>
+      <footer className="app-footer">© 2021 by Delaney Coveno <br></br> Please contact me at djcoveno@gmail.com to create some photos together :)</footer>
     </div>
 
   );
