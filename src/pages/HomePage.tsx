@@ -6,7 +6,7 @@ import { ClickablePhoto } from '../components/ClickablePhoto'
 export const HomePage = () : JSX.Element => {
 return (
 <>
-    <Grid container spacing={0} justify="center" alignItems="center">
+    <Grid container spacing={0} alignItems="center">
         <Grid item xs={2}></Grid>
         <Grid item xs>
             <ClickablePhoto linkTo="somewhere" alt="propAlt" imageSrc={img} text="Portraiture"/>

@@ -39,10 +39,11 @@ const clickFunction = () => {
 console.log("hi");
 }
 export const ClickablePhoto = (props: PhotoProps) : JSX.Element => {
-    const image = { uri: props.imageSrc };
     const classes = useStyles();
     return (
-        <div className={classes.imageContainer} style={{backgroundImage: `url(${props.imageSrc})`}}>
+        <div className={classes.imageContainer} 
+            style={{backgroundImage: `url(${props.imageSrc})`}}
+            onClick={clickFunction}>
             {((props.text) !== undefined) ?
             <div className={classes.textOverlay}>{props.text}</div> : null}
         </div>
