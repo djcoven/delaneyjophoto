@@ -1,2 +1,4 @@
 node_modules/
 access_token
+src/.DS_Store
+src/images/.DS_Store

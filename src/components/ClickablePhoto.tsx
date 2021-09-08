@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 type PhotoProps = {
-    imageSrc: string,
+    img: string,
     linkTo: string,
     alt: string,
     text?: string
@@ -45,7 +45,7 @@ export const ClickablePhoto = (props: PhotoProps) : JSX.Element => {
     return (
         <Link to={props.linkTo} style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <div className={classes.imageContainer} 
-            style={{backgroundImage: `url(${props.imageSrc})`}}
+            style={{backgroundImage: `url(${props.img})`}}
             onClick={clickFunction}>
             {((props.text) !== undefined) ?
             <div className={classes.textOverlay}>{props.text}</div> : null}
