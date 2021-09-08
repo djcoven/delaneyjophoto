@@ -9,7 +9,7 @@ return (
     <Grid container spacing={0} alignItems="center">
         <Grid item xs={2}></Grid>
         <Grid item xs>
-            <ClickablePhoto linkTo="somewhere" alt="propAlt" imageSrc={img} text="Portraiture"/>
+            <ClickablePhoto linkTo="portraits" alt="propAlt" imageSrc={img} text="Portraiture"/>
         </Grid>
         <Grid item xs>
             <ClickablePhoto linkTo="somewhere" alt="propAlt" imageSrc={img2} text="Nature and Wildlife Shop"/>

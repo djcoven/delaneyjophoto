@@ -1,5 +1,7 @@
 import React from 'react';
 import {makeStyles} from "@material-ui/core/styles"
+import { Link } from 'react-router-dom'
+
 
 type PhotoProps = {
     imageSrc: string,
@@ -41,11 +43,13 @@ console.log("hi");
 export const ClickablePhoto = (props: PhotoProps) : JSX.Element => {
     const classes = useStyles();
     return (
+        <Link to={props.linkTo} style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <div className={classes.imageContainer} 
             style={{backgroundImage: `url(${props.imageSrc})`}}
             onClick={clickFunction}>
             {((props.text) !== undefined) ?
             <div className={classes.textOverlay}>{props.text}</div> : null}
         </div>
+        </Link>
     )
 }

@@ -3,6 +3,8 @@ import github from './images/logos/github.png'
 import instagram from './images/logos/instagram.png'
 import {LogoLinkAndText} from './components/LogoLinkAndText'
 import {HomePage} from './pages/HomePage.tsx'
+import {PortraitPage} from './pages/PortraitPage.tsx'
+import { Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
@@ -13,7 +15,12 @@ function App() {
         </div>
         <div> Portrait and Nature Photography </div>
       </header>
-      <HomePage/>
+
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/:portaitGallery" component={PortraitPage} />
+      </Switch>
+
       <footer className="app-footer2">
         <div >Create more than you consume</div>
         <br/>
