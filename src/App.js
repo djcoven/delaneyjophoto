@@ -1,7 +1,8 @@
 import './App.css'
 import github from './images/logos/github.png'
 import instagram from './images/logos/instagram.png'
-import {LogoLinkAndText} from './components/LogoLinkAndText'
+import {LogoLinkAndText} from './components/LogoLinkAndText.tsx'
+import { AppHeader } from './components/AppHeader.tsx'
 import {HomePage} from './pages/HomePage.tsx'
 import {PortraitPage} from './pages/PortraitPage.tsx'
 import { Route, Switch } from 'react-router-dom'
@@ -9,12 +10,8 @@ import { Route, Switch } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <header className="app-header">
-        <div style={{fontFamily: "Snell Roundhand, cursive", fontWeight: "bold", fontSize: "50px", padding: "0"}}>
-          Delaney Jo Coveno
-        </div>
-        <div> Portrait and Nature Photography </div>
-      </header>
+
+      <AppHeader/>
 
       <Switch>
         <Route exact path="/" component={HomePage} />
