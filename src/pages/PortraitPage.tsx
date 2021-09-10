@@ -1,5 +1,6 @@
 import {ImageList, ImageListItem} from '@material-ui/core'
-import img from '../images/maternity/IMG_7557.jpg'
+import { Link } from 'react-router-dom'
+import maternity from '../images/maternity/IMG_7557.jpg'
 import img2 from '../images/christmas tree family/IMG_9378.jpg'
 import img3 from '../images/artists bluff/IMG_1283.jpg'
 import img4 from '../images/otto/IMG_1646.jpg'
@@ -10,6 +11,7 @@ import img7 from '../images/christmas dogs/IMG_9435.jpg'
 interface galleryItem {
     img: string,
     alt: string,
+    link: string,
     wide?: boolean
 }
 
@@ -19,20 +21,22 @@ interface galleryItem {
 export const PortraitPage = () : JSX.Element => {
 
     //PATTERNS: VW, WV, VVV
-    const g1 : galleryItem = {img: img, alt:"alt1"}
-    const g2: galleryItem = {img: img2, alt: "alt1", wide: true}
-    const g3: galleryItem = {img: img6, alt: "alt"}
-    const g4: galleryItem = {img: img3, alt: "alt"}
-    const g5: galleryItem = {img: img5, alt: "alt"}
-    const g6: galleryItem = {img: img4, alt: "alt", wide: true}
-    const g7: galleryItem = {img: img7, alt: "alt"}
+    const g1 : galleryItem = {img: maternity, alt:"maternity", link: "maternity" }
+    const g2: galleryItem = {img: img2, alt: "alt1", link: "", wide: true}
+    const g3: galleryItem = {img: img6, alt: "alt", link: ""}
+    const g4: galleryItem = {img: img3, alt: "alt", link: ""}
+    const g5: galleryItem = {img: img5, alt: "alt", link: ""}
+    const g6: galleryItem = {img: img4, alt: "alt", link: "", wide: true}
+    const g7: galleryItem = {img: img7, alt: "alt", link: ""}
 
     const gallery : galleryItem[] = [ g1, g2, g3, g4, g5, g6, g7]
 
     const galleryItems : JSX.Element[] = gallery.map((item) => 
-        <ImageListItem key={item.img} rows={4} cols={item.wide ? 2 : 1}>
+        <ImageListItem component={Link} to="/" key={item.img} rows={4} cols={item.wide ? 2 : 1}>
             <img src={item.img} alt={item.alt}/>
-        </ImageListItem>);
+        </ImageListItem>
+
+  );
 
     return (
     <>
