@@ -1,15 +1,9 @@
 import React from 'react';
-import {makeStyles} from "@material-ui/core/styles"
 import { LogoLinkAndText } from './LogoLinkAndText';
 import github from '../images/logos/github.png'
 import instagram from '../images/logos/instagram.png'
 
-const useStyles = makeStyles({
-
-})
-
 export const AppFooter = () : JSX.Element => {
-    const classes = useStyles();
     return (   
     <div>  
         <footer className="app-footer2">
