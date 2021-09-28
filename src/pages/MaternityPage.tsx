@@ -1,18 +1,24 @@
-import {ImageList} from '@material-ui/core'
-import { galleryItem, mapGalleryItemToImageListItem } from './GalleryFunctions'
-import { images } from '../images/maternity/images'
+import { createGallery2 } from './GalleryFunctions'
+import { maternityImages } from '../images/maternity/images'
+// import { images } from '../images/christmas tree family/images'
+
 
 export const MaternityPage = () : JSX.Element => {
-
-    const galleryItems : JSX.Element[] = images.map((item : galleryItem) => 
-        mapGalleryItemToImageListItem(item)
-    );
-
     return (
-    <>
-        <ImageList rowHeight={160} cols={3}>
-            {galleryItems}
-        </ImageList>
-    </>
+        createGallery2(maternityImages)
     )
 }
+
+export const ChristmasTreeFamilyPage = () : JSX.Element => {
+    return (
+        createGallery2(maternityImages)
+    )
+}
+
+// export function createGalleryPage(imageFolderName : string) : JSX.Element {
+//     let imagesPath : string = '../images' + imageFolderName + 'images'
+//     import {images} from imagesPath
+//         return (
+//             createGallery2(imageFolderName)
+//         )
+// }

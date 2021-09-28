@@ -17,7 +17,7 @@ export const PortraitPage = () : JSX.Element => {
 
     //PATTERNS: VW, WV, VVV
     const g1 : galleryItem = {img: maternity, alt:"maternity", link: "maternity" }
-    const g2: galleryItem = {img: christmasTreeFamily, alt: "christmas tree family", link: "christmas tree family", wide: true}
+    const g2: galleryItem = {img: christmasTreeFamily, alt: "christmas tree family", link: "christmasTreeFamily", wide: true}
     const g3: galleryItem = {img: img6, alt: "alt", link: ""}
     const g4: galleryItem = {img: img3, alt: "alt", link: ""}
     const g5: galleryItem = {img: img5, alt: "alt", link: ""}
