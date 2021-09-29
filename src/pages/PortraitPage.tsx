@@ -3,7 +3,7 @@ import { galleryItem, mapGalleryItemToImageListItem } from './GalleryFunctions'
 
 
 import maternity from '../images/maternity/image01.jpg'
-import christmasTreeFamily from '../images/christmas tree family/IMG_9378.jpg'
+import christmasTreeFamily from '../images/christmas tree family/image01.jpg'
 import img3 from '../images/artists bluff/IMG_1283.jpg'
 import img4 from '../images/otto/IMG_1646.jpg'
 import img5 from '../images/maddie cats/IMG_9375.jpg'

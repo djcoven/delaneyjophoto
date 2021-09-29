@@ -11,7 +11,7 @@ import image09 from './image09.jpg';
 import image10 from './image10.jpg';
 
 
-export const maternityImages : galleryItem[] = [
+export const images : galleryItem[] = [
     { img: image01, alt: 'maternity1'},
     { img: image02, alt: 'maternity2'},
     { img: image03, alt: 'maternity3'},
