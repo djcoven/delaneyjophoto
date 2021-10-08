@@ -3,7 +3,8 @@ import { AppHeader } from './components/AppHeader.tsx'
 import { AppFooter } from './components/AppFooter.tsx'
 import {HomePage} from './pages/HomePage.tsx'
 import {PortraitPage} from './pages/PortraitPage.tsx'
-import {MaternityPage, ChristmasTreeFamilyPage, BeethovenGotchaDayPage} from './pages/GalleryPageFactory.tsx'
+import {MaternityPage, ChristmasTreeFamilyPage,
+  BeethovenGotchaDayPage, FinnsFallPhotoshootPage} from './pages/GalleryPageFactory.tsx'
 import { Route, Switch } from 'react-router-dom'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Route exact path="/maternity" component={MaternityPage} />
         <Route exact path="/christmasTreeFamily" component={ChristmasTreeFamilyPage} />
         <Route exact path="/beethovenGotchaDay" component={BeethovenGotchaDayPage} />
-
+        <Route exact path="/finnsFallPhotoshoot" component={FinnsFallPhotoshootPage} />
 
       </Switch>
 

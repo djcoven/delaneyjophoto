@@ -1,7 +1,6 @@
 import {ImageList} from '@material-ui/core'
 import { galleryItem, mapGalleryItemToImageListItem } from './GalleryFunctions'
 
-
 import maternity from '../images/maternity/image01.jpg'
 import christmasTreeFamily from '../images/christmas tree family/image01.jpg'
 import img3 from '../images/artists bluff/IMG_1283.jpg'
@@ -9,6 +8,7 @@ import img4 from '../images/otto/IMG_1646.jpg'
 import img5 from '../images/maddie cats/IMG_9375.jpg'
 import beethoven from '../images/beethoven/image06.jpg'
 import img7 from '../images/christmas dogs/IMG_9435.jpg'
+import finnFall from '../images/finns fall photoshoot/image01.jpg'
 
 /// NEW IDEA: make a config file where can do imports, make gallery  list, manually set WIDE where needed,
 /// manually change order of items on the page easily, then cleanly loop through on the page 
@@ -23,8 +23,10 @@ export const PortraitPage = () : JSX.Element => {
     const g5: galleryItem = {img: img5, alt: "alt", link: ""}
     const g6: galleryItem = {img: img4, alt: "alt", link: "", wide: true}
     const g7: galleryItem = {img: img7, alt: "alt", link: ""}
+    const g8: galleryItem = {img: finnFall, alt: "finnFall", link: "finnsFallPhotoshoot", wide: true}
 
-    const gallery : galleryItem[] = [ g1, g2, g3, g4, g5, g6, g7]
+
+    const gallery : galleryItem[] = [ g1, g8, g3, g5, g4, g2, g6, g7]
 
     const galleryItems : JSX.Element[] = gallery.map((item) => 
         mapGalleryItemToImageListItem(item)
