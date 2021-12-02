@@ -11,14 +11,19 @@ type PhotoProps = {
 }
 const useStyles = makeStyles({
     imageContainer: {
-        height: "600px",
+        height: "75vh",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         margin: 20,
-        maxWidth: "30vw",
+        maxWidth: "100%",
         "&:hover": { 
             opacity: 0.8,
         },
+        "@media (max-width: 800px)": {
+            //backgroundColor: "red",
+            height: "40vh",
+            margin: 0,
+          }
     },
     textOverlay: {
         position: 'relative',
@@ -29,6 +34,10 @@ const useStyles = makeStyles({
         fontSize: 30,
         backgroundColor: '#D6E5D6',
         opacity: .5,
+        "@media (max-width: 800px)": {
+            fontSize: 20,
+            top: '120px'
+          }
     },
 
     //TODO: conditional styling for mobile??
