@@ -1,4 +1,4 @@
-import {ImageList} from '@material-ui/core'
+import {ImageList} from '@mui/material'
 import { galleryItem, mapGalleryItemToImageListItem } from './GalleryFunctions'
 
 import maternity from '../images/maternity/image01.jpg'
@@ -35,7 +35,7 @@ export const PortraitPage = () : JSX.Element => {
 
     return (
     <>
-        <ImageList rowHeight={160} cols={3}>
+        <ImageList variant="masonry" cols={3}>
             {galleryItems}
         </ImageList>
     </>
