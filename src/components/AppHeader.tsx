@@ -13,7 +13,11 @@ const useStyles = makeStyles({
         padding: "0",
         "&:hover": {
             opacity: ".8"
-        }
+        },
+        "@media (max-width: 800px)": {
+            paddingTop: "10px",
+            fontSize: "30px",
+          }
     }
 })
 

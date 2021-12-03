@@ -12,7 +12,7 @@ return (
             <ClickablePhoto linkTo="portraitGallery" alt="propAlt" img={img} text="Portraiture"/>
         </Grid>
         <Grid item xs={6} md={4}>
-            <ClickablePhoto linkTo="somewhere" alt="propAlt" img={img2} text="Nature and Wildlife Shop"/>
+            <ClickablePhoto linkTo="somewhere" alt="propAlt" img={img2} text="Print Shop"/>
         </Grid>
         <Grid item md={2}></Grid>
     </Grid>

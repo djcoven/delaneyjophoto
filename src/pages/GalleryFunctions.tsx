@@ -1,4 +1,4 @@
-import {ImageListItem, ImageList} from '@material-ui/core'
+import { ImageList, ImageListItem } from '@material-ui/core';
 import { Link } from 'react-router-dom'
 
 export interface galleryItem {
@@ -19,7 +19,7 @@ export function mapGalleryItemToImageListItem(item: galleryItem) : JSX.Element {
 export function createGallery(galleryItems : JSX.Element[]) : JSX.Element {
     return(
     <>
-        <ImageList rowHeight={160} cols={3}>
+        <ImageList>
             {galleryItems}
         </ImageList>
     </>)
