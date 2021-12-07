@@ -1,6 +1,7 @@
 import React from 'react';
 import {makeStyles} from "@material-ui/core/styles"
 import { Link } from 'react-router-dom'
+import { AppMenu } from "./Menu"
 
 type HeaderProps = {
 
@@ -16,9 +17,9 @@ const useStyles = makeStyles({
         },
         "@media (max-width: 800px)": {
             paddingTop: "10px",
-            fontSize: "30px",
+            fontSize: "20px",
           }
-    }
+    },
 })
 
 export const AppHeader = (props: HeaderProps) : JSX.Element => {
@@ -31,6 +32,7 @@ export const AppHeader = (props: HeaderProps) : JSX.Element => {
             </div>
         </Link>
         <div> Portrait and Nature Photography </div>
+        <AppMenu></AppMenu>
     </header>
     )
 }
