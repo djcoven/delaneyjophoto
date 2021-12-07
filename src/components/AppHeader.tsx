@@ -47,19 +47,23 @@ const useStyles = makeStyles({
         justifyContent: "space-around",
         fontWeight: "bold",
         "@media (max-width: 400px)": {
-            fontSize: "12px",
+            fontSize: "11px",
           }
     },
     menuItem : {
         paddingTop: "5px",
         paddingBottom: "5px",
-        width: "25%",
         height: "100%",
+        width: "20%",
         "&:hover" : {
             opacity: 0.8,
             backgroundColor: "#acc2ac"
+        },
+        "@media (max-width: 400px)": {
+            width: "auto",
+            padding: "5px",
         }
-        }
+    }
 })
 
 export const AppHeader = (props: HeaderProps) : JSX.Element => {
@@ -73,6 +77,11 @@ export const AppHeader = (props: HeaderProps) : JSX.Element => {
             <div className={classes.subtitle}> PHOTOGRAPHER </div>
         </Link>
         <div className={classes.menu}>
+            <span className={classes.menuItem}>
+             <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+                 Home
+             </Link>
+             </span>
             <span className={classes.menuItem}>
              <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit' }}>
                  About Me
