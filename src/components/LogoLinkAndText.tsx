@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import {makeStyles} from "@material-ui/core/styles"
 
 type LogoProps = {
     image: string,
     link: string,
     text?: string,
-    alt: string
+    alt: string,
+    textStyle?: CSSProperties,
+    imageStyle?: CSSProperties
 }
 const useStyles = makeStyles({
     container: {
         //padding: "2px",
-        width: "100px",
+        width: "auto",
         //alignItems: "center",
-        display: "inline-block"
+        display: "inline-block",
     },
     image: {
         zIndex: -1,
@@ -37,14 +39,10 @@ const useStyles = makeStyles({
     },
 })
 
-const clickFunction = () => {
-    //TODO go to link
-console.log("hi");
-}
 export const LogoLinkAndText = (props: LogoProps) : JSX.Element => {
     const classes = useStyles();
-    return (<span className={classes.container} onClick={clickFunction}>
-        <img src={props.image} className={classes.image} alt={props.alt} onClick={clickFunction}/>
-        <span className={classes.text}>{props.text}</span>
-</span>)
+    return (<a href={props.link} target='_blank' style={{color:'inherit'}}><span className={classes.container}>
+        <img src={props.image} className={classes.image} style={props.imageStyle} alt={props.alt}/>
+        <span className={classes.text} style={props.textStyle}>{props.text}</span>
+</span></a>)
 }

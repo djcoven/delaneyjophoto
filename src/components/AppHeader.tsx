@@ -83,13 +83,13 @@ export const AppHeader = (props: HeaderProps) : JSX.Element => {
              </Link>
              </span>
             <span className={classes.menuItem}>
-             <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+             <Link to="/about" style={{ color: 'inherit', textDecoration: 'inherit' }}>
                  About Me
              </Link>
              </span>
              <span className={classes.menuItem}>
 
-             <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+             <Link to="/portraitGallery" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                  Portraits
              </Link>
              </span>
@@ -103,7 +103,7 @@ export const AppHeader = (props: HeaderProps) : JSX.Element => {
 
              <span className={classes.menuItem}>
 
-             <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+             <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                  Contact
              </Link>
              </span>

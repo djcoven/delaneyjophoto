@@ -2,17 +2,7 @@
   text-align: center;
 }
 
-.app-header {
-  background-color: #D6E5D6;
-  height: auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: "5";
-  color: #7F9680;
-}
+
 
 .app-footer {
   background-color: white;
