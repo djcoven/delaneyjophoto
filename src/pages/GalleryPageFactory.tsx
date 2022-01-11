@@ -4,6 +4,7 @@ import { images as maternityImages } from '../images/maternity/images'
 import { images as christmasTreeFamilyImages } from '../images/christmas tree family/images'
 import { images as beethovenGotchaImages } from '../images/beethoven/images'
 import { images as finnsFallPhotoshootImages } from '../images/finns fall photoshoot/images'
+import { images as calebAbbyEngagementImages } from '../images/caleb abby engagement/images'
 
 
 export const MaternityPage = () : JSX.Element => {
@@ -27,5 +28,11 @@ export const BeethovenGotchaDayPage = () : JSX.Element => {
 export const FinnsFallPhotoshootPage = () : JSX.Element => {
     return (
         createGallery2(finnsFallPhotoshootImages)
+    )
+}
+
+export const CalebAbbyEngagement  = () : JSX.Element => {
+    return (
+        createGallery2(calebAbbyEngagementImages)
     )
 }

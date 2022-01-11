@@ -26,6 +26,7 @@ const useStyles = makeStyles({
         "&:hover": { 
             opacity: 0.8,
         },
+
     },
     text: {
         //width: "100%",
@@ -36,6 +37,9 @@ const useStyles = makeStyles({
         "&:hover": { 
             opacity: 0.8,
         },
+        "@media (max-width: 400px)": {
+            fontSize: "12px",
+        }
     },
 })
 

@@ -44,7 +44,6 @@ export const AppMenu = () : JSX.Element => {
         onClick={handleClick}
       >
           <MenuIcon component={MenuIcon} className={classes.iconStyle} fontSize="large"/>
-          {/* <DeleteIcon></DeleteIcon> */}
       </IconButton>
       <Menu
         id="basic-menu"

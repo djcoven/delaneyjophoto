@@ -8,7 +8,8 @@ import img4 from '../images/otto/IMG_1646.jpg'
 import img5 from '../images/maddie cats/IMG_9375.jpg'
 import beethoven from '../images/beethoven/image06.jpg'
 import img7 from '../images/christmas dogs/IMG_9435.jpg'
-import finnFall from '../images/finns fall photoshoot/image01.jpg'
+import finnFall from '../images/finns fall photoshoot/image07.jpg'
+import engaged from '../images/caleb abby engagement/image2.jpg'
 
 /// NEW IDEA: make a config file where can do imports, make gallery  list, manually set WIDE where needed,
 /// manually change order of items on the page easily, then cleanly loop through on the page 
@@ -24,9 +25,11 @@ export const PortraitPage = () : JSX.Element => {
     const g6: galleryItem = {img: img4, alt: "alt", link: "", wide: true}
     const g7: galleryItem = {img: img7, alt: "alt", link: ""}
     const g8: galleryItem = {img: finnFall, alt: "finnFall", link: "finnsFallPhotoshoot", wide: true}
+    const g9: galleryItem = {img: engaged, alt: "engaged", link: "calebAbbyEngagement"}
 
 
-    const gallery : galleryItem[] = [ g1, g8, g3, g5, g4, g2, g6, g7]
+
+    const gallery : galleryItem[] = [ g1, g3, g4, g9, g5, g2, g8, g6, g7]
 
     const galleryItems : JSX.Element[] = gallery.map((item) => 
         mapGalleryItemToImageListItem(item)

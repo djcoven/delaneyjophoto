@@ -5,7 +5,7 @@ import {HomePage} from './pages/HomePage.tsx'
 import {PortraitPage} from './pages/PortraitPage.tsx'
 import {ContactPage} from './pages/ContactPage.tsx'
 import {MaternityPage, ChristmasTreeFamilyPage,
-  BeethovenGotchaDayPage, FinnsFallPhotoshootPage} from './pages/GalleryPageFactory.tsx'
+  BeethovenGotchaDayPage, FinnsFallPhotoshootPage, CalebAbbyEngagement} from './pages/GalleryPageFactory.tsx'
 import { Route, Switch } from 'react-router-dom'
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Route exact path="/christmasTreeFamily" component={ChristmasTreeFamilyPage} />
         <Route exact path="/beethovenGotchaDay" component={BeethovenGotchaDayPage} />
         <Route exact path="/finnsFallPhotoshoot" component={FinnsFallPhotoshootPage} />
+        <Route exact path="/calebAbbyEngagement" component={CalebAbbyEngagement} />
 
       </Switch>
 

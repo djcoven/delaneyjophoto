@@ -10,8 +10,8 @@ import image06 from './image06.jpg';
 export const images : galleryItem[] = [
     { img: image01, alt: 'christmas1', wide: true},
     { img: image04, alt: 'christmas1'},
-    { img: image05, alt: 'christmas1', wide: true},
     { img: image02, alt: 'christmas1'},
+    { img: image05, alt: 'christmas1', wide: true},
     { img: image06, alt: 'christmas1'},
     { img: image03, alt: 'christmas1', wide: true},
   ];

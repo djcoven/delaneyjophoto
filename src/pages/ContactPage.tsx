@@ -26,7 +26,10 @@ const useStyles = makeStyles({
         color: "black",
         textAlign: "left",
         paddingTop: "20px",
-        paddingBottom: "20px"
+        paddingBottom: "20px",
+        "@media (max-width: 400px)": {
+            fontSize: "18px",
+        }
     },
     contact: {
         fontFamily: 'tahoma',
@@ -35,7 +38,12 @@ const useStyles = makeStyles({
         color: "black",
         textAlign: "left",
         paddingTop: "5px",
-        paddingBottom: "5px"
+        paddingBottom: "5px",
+        "@media (max-width: 400px)": {
+            //fontSize: "12px",
+            //color: "red",
+            fontSize: "small"
+        }
     }
 })
 

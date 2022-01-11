@@ -13,8 +13,7 @@ export const AppFooter = () : JSX.Element => {
             <br/>
             <LogoLinkAndText image={github} text="@djcoven" link="https://github.com/djcoven" alt="alt"></LogoLinkAndText>
         </footer>
-        <footer className="app-footer">© 2021 by Delaney Coveno <br></br>
-         Please contact me at djcoveno@gmail.com to create some photos together :)
+        <footer className="app-footer">© 2021 by Delaney Coveno :) <br></br>
         </footer>
     </div> 
     )
