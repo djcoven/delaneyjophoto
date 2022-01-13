@@ -1,16 +1,15 @@
-import './App.css'
 import { AppHeader } from './components/AppHeader.tsx'
 import { AppFooter } from './components/AppFooter.tsx'
 import {HomePage} from './pages/HomePage.tsx'
 import {PortraitPage} from './pages/PortraitPage.tsx'
 import {ContactPage} from './pages/ContactPage.tsx'
 import {MaternityPage, ChristmasTreeFamilyPage,
-  BeethovenGotchaDayPage, FinnsFallPhotoshootPage, CalebAbbyEngagement} from './pages/GalleryPageFactory.tsx'
+  BeethovenGotchaDayPage, FinnsFallPhotoshootPage, CalebAbbyEngagement} from './pages/GalleryPageFactory.tsx';
 import { Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <div style={{textAlign: "center"}}>
       <AppHeader/>
 
       <Switch>
