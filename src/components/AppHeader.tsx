@@ -1,7 +1,6 @@
 import React from 'react';
 import {makeStyles} from "@material-ui/core/styles"
 import { Link } from 'react-router-dom'
-import { AppMenu } from "./Menu"
 
 type HeaderProps = {
 
@@ -96,7 +95,7 @@ export const AppHeader = (props: HeaderProps) : JSX.Element => {
 
              <span className={classes.menuItem}>
 
-             <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+             <Link to="/printShop" style={{ color: 'inherit', textDecoration: 'inherit'}}>
                  Print Shop
              </Link>
              </span>
