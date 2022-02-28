@@ -4,7 +4,7 @@ import { galleryItem, mapGalleryItemToImageListItem } from './GalleryFunctions'
 import maternity from '../images/maternity/image01.jpg'
 import christmasTreeFamily from '../images/christmas tree family/image01.jpg'
 import img3 from '../images/artists bluff/IMG_1283.jpg'
-import img4 from '../images/otto/IMG_1646.jpg'
+import otto from '../images/otto/image3.jpg'
 import img5 from '../images/maddie cats/IMG_9375.jpg'
 import beethoven from '../images/beethoven/image06.jpg'
 import img7 from '../images/christmas dogs/IMG_9435.jpg'
@@ -22,7 +22,7 @@ export const PortraitPage = () : JSX.Element => {
     const g3: galleryItem = {img: beethoven, alt: "alt", link: "beethovenGotchaDay"}
     const g4: galleryItem = {img: img3, alt: "alt", link: ""}
     const g5: galleryItem = {img: img5, alt: "alt", link: ""}
-    const g6: galleryItem = {img: img4, alt: "alt", link: "", wide: true}
+    const g6: galleryItem = {img: otto, alt: "alt", link: "otto", wide: true}
     const g7: galleryItem = {img: img7, alt: "alt", link: ""}
     const g8: galleryItem = {img: finnFall, alt: "finnFall", link: "finnsFallPhotoshoot", wide: true}
     const g9: galleryItem = {img: engaged, alt: "engaged", link: "calebAbbyEngagement"}
