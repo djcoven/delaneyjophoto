@@ -5,7 +5,7 @@ import {PortraitPage} from './pages/PortraitPage.tsx'
 import {PrintShop} from './pages/PrintShop.tsx'
 import {ContactPage} from './pages/ContactPage.tsx'
 import {MaternityPage, ChristmasTreeFamilyPage,
-  BeethovenGotchaDayPage, FinnsFallPhotoshootPage, CalebAbbyEngagement, Otto} from './pages/GalleryPageFactory.tsx';
+  BeethovenGotchaDayPage, FinnsFallPhotoshootPage, CalebAbbyEngagement, Otto, Cats} from './pages/GalleryPageFactory.tsx';
 import { Route, Switch } from 'react-router-dom'
 
 function App() {
@@ -24,6 +24,8 @@ function App() {
         <Route exact path="/finnsFallPhotoshoot" component={FinnsFallPhotoshootPage} />
         <Route exact path="/calebAbbyEngagement" component={CalebAbbyEngagement} />
         <Route exact path="/otto" component={Otto} />
+        <Route exact path="/cats" component={Cats} />
+
 
 
       </Switch>

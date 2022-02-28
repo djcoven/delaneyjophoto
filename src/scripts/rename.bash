@@ -1,5 +1,5 @@
 #!/bin/bash
-num=0
+num=2
 for file in IMG*
 do
   mv "$file" "image$num.jpg"
