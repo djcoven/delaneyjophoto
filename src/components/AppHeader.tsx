@@ -34,33 +34,37 @@ const useStyles = makeStyles({
         paddingBottom: "5px",
         fontSize: "14px",
         "@media (max-width: 400px)": {
-            // paddingTop: "20px",
             fontSize: "10px",
           }
     },
     menu : {
         backgroundColor: "#bed1be",
         width: "100%",
+        height: "40px",
         color: "#7F9680",
         display: "flex",
         justifyContent: "space-around",
         fontWeight: "bold",
         "@media (max-width: 400px)": {
+            height: "30px",
             fontSize: "11px",
           }
     },
     menuItem : {
-        paddingTop: "5px",
-        paddingBottom: "5px",
-        height: "100%",
+        color: "inherit",
+        textDecoration: "inherit",
+        display: "block",    
+        position: "relative",    
+        zIndex: 1,
         width: "20%",
+        padding: "10px 15px 5px 15px",
         "&:hover" : {
             opacity: 0.8,
             backgroundColor: "#acc2ac"
         },
         "@media (max-width: 400px)": {
             width: "auto",
-            padding: "5px",
+            padding: "8px 5px 0px 5px",
         }
     }
 })
@@ -76,37 +80,21 @@ export const AppHeader = (props: HeaderProps) : JSX.Element => {
             <div className={classes.subtitle}> PHOTOGRAPHER </div>
         </Link>
         <div className={classes.menu}>
-            <span className={classes.menuItem}>
-             <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+             <Link to="/" className={classes.menuItem}>
                  Home
              </Link>
-             </span>
-            <span className={classes.menuItem}>
-             <Link to="/about" style={{ color: 'inherit', textDecoration: 'inherit' }}>
+             <Link to="/about" className={classes.menuItem}>
                  About Me
              </Link>
-             </span>
-             <span className={classes.menuItem}>
-
-             <Link to="/portraitGallery" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+             <Link to="/portraitGallery" className={classes.menuItem}>
                  Portraits
              </Link>
-             </span>
-
-             <span className={classes.menuItem}>
-
-             <Link to="/printShop" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+             <Link to="/printShop" className={classes.menuItem}>
                  Print Shop
              </Link>
-             </span>
-
-             <span className={classes.menuItem}>
-
-             <Link to="/contact" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+             <Link to="/contact" className={classes.menuItem}>
                  Contact
              </Link>
-             </span>
-
         </div>
     </header>
     )
